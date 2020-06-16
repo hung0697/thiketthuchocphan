@@ -1,0 +1,7 @@
+3 a 
+SELECT a.cust_name as " Customer Name ", b.name as " Salesman Name ", a.city, a.grade, b.commission
+FROM customer a
+INNER JOIN salesman b
+ON a.salesman_id=b.salesman_id
+WHERE a.grade > 100
+AND b.commission > 0.12
